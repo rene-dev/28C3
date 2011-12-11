@@ -10,7 +10,7 @@
 
 @implementation RootViewController
 
-@synthesize firstDayArray,secondDayArray,thirdDayArray,fourthDayArray,fifthDayArray;
+@synthesize firstDayArray,secondDayArray,thirdDayArray,fourthDayArray;
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -24,7 +24,6 @@
 	self.secondDayArray = [NSMutableArray arrayWithCapacity:20];
 	self.thirdDayArray = [NSMutableArray arrayWithCapacity:20];
 	self.fourthDayArray = [NSMutableArray arrayWithCapacity:20];
-    self.fifthDayArray = [NSMutableArray arrayWithCapacity:20];
 	appDelegate = (_7C3AppDelegate *)[[UIApplication sharedApplication] delegate];
 	[self organizeTheData];
 	self.title = @"CCC 2011";
@@ -87,20 +86,17 @@
 	for (int i = 0; i<[appDelegate.events count]; i++) {
 		Event *aEvent = [appDelegate.events objectAtIndex:i];
 	
-		if ([aEvent.date isEqualToString:@"2011-08-10"]){
+		if ([aEvent.date isEqualToString:@"2011-12-27"]){
 			[self.firstDayArray addObject:aEvent];
 		}
-		if ([aEvent.date isEqualToString:@"2011-08-11"]){
+		if ([aEvent.date isEqualToString:@"2011-12-28"]){
 			[self.secondDayArray addObject:aEvent];
 		}	
-		if ([aEvent.date isEqualToString:@"2011-08-12"]){
+		if ([aEvent.date isEqualToString:@"2011-12-29"]){
 			[self.thirdDayArray addObject:aEvent];
 		}		
-		if ([aEvent.date isEqualToString:@"2011-08-13"]){
+		if ([aEvent.date isEqualToString:@"2011-12-30"]){
 			[self.fourthDayArray addObject:aEvent];
-		}
-        if ([aEvent.date isEqualToString:@"2011-08-14"]){
-			[self.fifthDayArray addObject:aEvent];
 		}
 	}
     //sort events by startdate
@@ -109,7 +105,6 @@
     [secondDayArray sortUsingDescriptors:[NSArray arrayWithObject:dateSorter]];
     [thirdDayArray  sortUsingDescriptors:[NSArray arrayWithObject:dateSorter]];
     [fourthDayArray sortUsingDescriptors:[NSArray arrayWithObject:dateSorter]];
-    [fifthDayArray  sortUsingDescriptors:[NSArray arrayWithObject:dateSorter]];
     [dateSorter release];
 }
 
@@ -146,19 +141,16 @@
 	
 	switch (section) {
 		case 0:
-			return @"Wednesday";
+			return @"Tuesday";
 			break;
 		case 1:
-			return @"Thursday";
+			return @"Wednesday";
 			break;
 		case 2:
-			return @"Friday";
+			return @"Thursday";
 			break;
 		case 3:
-			return @"Saturday";
-			break;
-		case 4:
-			return @"Sunday";
+			return @"Friday";
 			break;
 	}
 	return @"";
@@ -216,9 +208,6 @@
 		case 3:
 			return [self.fourthDayArray count];
 			break;
-		case 4:
-			return [self.fifthDayArray count];
-			break;
 	}
 	return 0;
 }
@@ -248,9 +237,6 @@
 			break;
 		case 3:
 			aEvent = [self.fourthDayArray objectAtIndex:indexPath.row];
-			break;
-		case 4:
-			aEvent = [self.fifthDayArray objectAtIndex:indexPath.row];
 			break;
 
 	}
@@ -320,9 +306,6 @@
 		case 3:
 			aEvent = [self.fourthDayArray objectAtIndex:indexPath.row];
 			break;
-		case 4:
-			aEvent = [self.fifthDayArray objectAtIndex:indexPath.row];
-			break;
 			
 	}
 	
@@ -365,7 +348,6 @@
 	[self.secondDayArray release];
 	[self.thirdDayArray release];
 	[self.fourthDayArray release];
-    [self.fifthDayArray release];
 	[appDelegate release];
     [super dealloc];
 }
