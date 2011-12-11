@@ -26,7 +26,7 @@
 	self.fourthDayArray = [NSMutableArray arrayWithCapacity:20];
 	appDelegate = (_7C3AppDelegate *)[[UIApplication sharedApplication] delegate];
 	[self organizeTheData];
-	self.title = @"CCC 2011";
+	self.title = @"28C3";
 
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.

@@ -152,10 +152,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				A7FC785814951F510064CDF0 /* Icon@2x.png */,
-				A7FC785614951F4C0064CDF0 /* Icon.png */,
-				A794B29114951F150055FD61 /* Default@2x.png */,
-				A794B28F14951F120055FD61 /* Default.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -177,25 +173,29 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8D1107310486CEB800E47090 /* _7C3-Info.plist */,
 				A78D3BDA13CF8C1B00C07030 /* blackArrow.png */,
 				A78D3BDB13CF8C1C00C07030 /* blueArrow.png */,
-				A7A7468A13F1F40D000C2BD9 /* schedule.en.xml */,
-				A78D3BDC13CF8C1C00C07030 /* whiteArrow.png */,
 				A78D3BDD13CF8C1C00C07030 /* blueArrow_new.png */,
-				B4A8419012BB2ADC00C80FF6 /* scifi.caf */,
-				B407DD9912B1334C00B9E906 /* culture.png */,
-				B407DD9A12B1334C00B9E906 /* hacking.png */,
-				B407DD9B12B1334C00B9E906 /* making.png */,
-				B407DD9C12B1334C00B9E906 /* science.png */,
-				B407DD9D12B1334C00B9E906 /* society.png */,
 				B407DD9012B1327200B9E906 /* community.png */,
-				B4B9ECC812B0334F005D73FC /* ReminderView.xib */,
+				B407DD9912B1334C00B9E906 /* culture.png */,
+				A794B28F14951F120055FD61 /* Default.png */,
+				A794B29114951F150055FD61 /* Default@2x.png */,
 				B4DD35AE12AF1A09003C8FF2 /* EventDetailView.xib */,
-				28F335F01007B36200424DE2 /* RootViewController.xib */,
-				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
-				8D1107310486CEB800E47090 /* _7C3-Info.plist */,
-				B486F33F12AF8AB500DB0527 /* WebView.xib */,
+				B407DD9A12B1334C00B9E906 /* hacking.png */,
 				B407DDD212B136CF00B9E906 /* HelpView.xib */,
+				A7FC785614951F4C0064CDF0 /* Icon.png */,
+				A7FC785814951F510064CDF0 /* Icon@2x.png */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				B407DD9B12B1334C00B9E906 /* making.png */,
+				B4B9ECC812B0334F005D73FC /* ReminderView.xib */,
+				28F335F01007B36200424DE2 /* RootViewController.xib */,
+				A7A7468A13F1F40D000C2BD9 /* schedule.en.xml */,
+				B407DD9C12B1334C00B9E906 /* science.png */,
+				B4A8419012BB2ADC00C80FF6 /* scifi.caf */,
+				B407DD9D12B1334C00B9E906 /* society.png */,
+				B486F33F12AF8AB500DB0527 /* WebView.xib */,
+				A78D3BDC13CF8C1C00C07030 /* whiteArrow.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
